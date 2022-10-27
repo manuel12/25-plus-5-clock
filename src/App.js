@@ -1,5 +1,8 @@
-import "./App.css";
 import { useState } from "react";
+import TimeStepLengthController from "./components/length-controller";
+import TimerController from "./components/timer-controller";
+
+import "./App.css";
 
 const DEFAULT_BREAK_LENGTH = 5;
 const DEFAULT_SESSION_LENGTH = 25;
@@ -180,49 +183,27 @@ function App() {
           <h1>25 + 5 clock</h1>
         </div>
         <div className="row">
-          <div className="break-container col-md-6">
-            <div id="break-label">Break Length</div>
-            <div
-              id="break-decrement"
-              className="button"
-              onClick={breakDecrementClickHandler}
-            >
-              Down
-            </div>
-            <div id="break-length" className="display-6">
-              {breakLength}
-            </div>
-            <div
-              id="break-increment"
-              className="button"
-              onClick={breakIncrementClickHandler}
-            >
-              Up
-            </div>
-          </div>
+          <TimeStepLengthController
+            textLabel="Break Length"
+            idLabel="break-label"
+            decrementId="break-decrement"
+            decrementClickHandler={breakDecrementClickHandler}
+            incrementId="break-increment"
+            incrementClickHandler={breakIncrementClickHandler}
+            timeStepId="break-length"
+            timeStepLength={breakLength}
+          />
 
-          <div className="session-container col-md-6">
-            <div id="session-label" className="">
-              Session Length
-            </div>
-            <div
-              id="session-decrement"
-              className="button"
-              onClick={sessionDecrementClickHandler}
-            >
-              Down
-            </div>
-            <div id="session-length" className="display-6">
-              {sessionLength}
-            </div>
-            <div
-              id="session-increment"
-              className="button"
-              onClick={sessionIncrementClickHandler}
-            >
-              Up
-            </div>
-          </div>
+          <TimeStepLengthController
+            textLabel="Session Length"
+            idLabel="session-label"
+            decrementId="session-decrement"
+            decrementClickHandler={sessionDecrementClickHandler}
+            incrementId="session-increment"
+            incrementClickHandler={sessionIncrementClickHandler}
+            timeStepId="session-length"
+            timeStepLength={sessionLength}
+          />
         </div>
 
         <div className="timer row">
@@ -233,22 +214,11 @@ function App() {
             {timer}
           </div>
         </div>
-        <div className="timer-controls row">
-          <div
-            id="start_stop"
-            className="button col-md-4"
-            onClick={startStopClickHandler}
-          >
-            Play/Stop
-          </div>
-          <div
-            id="reset"
-            className="button col-md-4"
-            onClick={resetClickHandler}
-          >
-            Reset
-          </div>
-        </div>
+        <TimerController
+          startStopClickHandler={startStopClickHandler}
+          resetClickHandler={resetClickHandler}
+        />
+
         <audio
           id="beep"
           preload="auto"
