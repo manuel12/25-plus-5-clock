@@ -1,10 +1,10 @@
 const TimeStepLengthController = (props) => {
   return (
     <div className="break-container col-md-6">
-      <div id={props.idLabel}>{props.textLabel}</div>
+      <div id={props.idLabel} className="heading-styles">{props.textLabel}</div>
       <div
         id={props.decrementId}
-        className="button"
+        className="button button-styles"
         onClick={props.decrementClickHandler}
       >
         Down
@@ -14,7 +14,7 @@ const TimeStepLengthController = (props) => {
       </div>
       <div
         id={props.incrementId}
-        className="button"
+        className="button button-styles"
         onClick={props.incrementClickHandler}
       >
         Up
