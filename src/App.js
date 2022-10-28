@@ -207,7 +207,7 @@ function App() {
         </div>
 
         <div className="timer row">
-          <div id="timer-label" className="display-6">
+          <div id="timer-label" className="display-6 w-50 m-auto heading-styles heading-bg">
             {timerLabel ? "Session" : "Break"}
           </div>
           <div id="time-left" className="display-1">
