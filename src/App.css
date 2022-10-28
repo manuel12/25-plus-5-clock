@@ -10,7 +10,7 @@
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.858);
+  background-color: #44c9fd;
   width: 50% !important;
   padding: 10px 25px 15px;
   border-radius: 10px;
@@ -38,6 +38,10 @@
   margin-bottom: 10px;
 }
 
+.heading-bg {
+  background-color: #58cc02;
+}
+
 .container-styles {
   padding: 20px;
   border: 4px solid darkgray;
@@ -49,6 +53,7 @@
   border: 2px solid #999;
   border-radius: 50px;
   box-shadow: 0 7px #999;
+  margin-bottom: 5px;
   cursor: pointer;
 }
 
