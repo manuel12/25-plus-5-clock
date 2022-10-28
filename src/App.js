@@ -178,8 +178,8 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container">
-        <div className="title">
+      <div className="container container-styles">
+        <div className="title heading-styles">
           <h1>25 + 5 clock</h1>
         </div>
         <div className="row">
