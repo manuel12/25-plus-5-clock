@@ -1,7 +1,7 @@
 const TimeStepLengthController = (props) => {
   return (
-    <div className="break-container col-md-6">
-      <div id={props.idLabel} className="heading-styles">{props.textLabel}</div>
+    <div className="mb-3 col-md-6">
+      <div id={props.idLabel} className="heading-styles heading-bg">{props.textLabel}</div>
       <div
         id={props.decrementId}
         className="button button-styles"
