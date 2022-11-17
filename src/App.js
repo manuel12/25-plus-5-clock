@@ -3,6 +3,8 @@ import TimeStepLengthController from "./components/length-controller";
 import TimerController from "./components/timer-controller";
 
 import "./App.css";
+import "./custom-styles.css";
+import "./custom-colors.css";
 
 const DEFAULT_BREAK_LENGTH = 5;
 const DEFAULT_SESSION_LENGTH = 25;
@@ -178,9 +180,9 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container container-styles">
-        <div className="title heading-styles">
-          <h1>25 + 5 clock</h1>
+      <div className="container bg-blue">
+        <div className="title heading-round bg-red">
+          <h1>25 + 5 Clock</h1>
         </div>
         <div className="row">
           <TimeStepLengthController
@@ -207,7 +209,7 @@ function App() {
         </div>
 
         <div className="timer row">
-          <div id="timer-label" className="display-6 w-50 m-auto heading-styles heading-bg">
+          <div id="timer-label" className="display-6 w-50 m-auto heading-round bg-green">
             {timerLabel ? "Session" : "Break"}
           </div>
           <div id="time-left" className="display-1">
