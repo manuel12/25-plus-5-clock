@@ -1,0 +1,118 @@
+* {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+
+:root {
+  background-color: #f0f1f3;
+  font-size: 1.2rem;
+}
+
+body {
+  user-select: none;
+  padding: 50px 0;
+}
+
+.heading-depth {
+  background-color: #ffbc00;
+  text-align: center;
+
+  padding: 3px;
+  border: 3px solid darkgray;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+}
+
+.heading-round {
+  text-align: center;
+  margin: 10px 0;
+  padding: 3px;
+  border: 3px solid;
+  border-radius: 50px;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 10px;
+  width: 50%;
+
+  border: 4px solid darkgray;
+  border-radius: 15px;
+  box-shadow: 0 10px rgb(120, 120, 120);
+}
+
+.label {
+  display: block;
+  margin: 5px 0;
+}
+
+.input {
+  display: block;
+  width: 95%;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  padding: 10px 2.5%;
+  margin: 10px 0;
+  font-size: 0.8rem;
+}
+
+.input:focus {
+  outline: 2px solid orange;
+}
+
+.select {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.textarea {
+  width: 100;
+  height: 100px;
+  font-family: inherit;
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 25px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.button {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px auto;
+  max-width: 50%;
+
+  border: 2px solid rgb(120, 120, 120);
+  border-radius: 50px;
+  box-shadow: 0 7px rgb(120, 120, 120);
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow: 0 1px rgb(120, 120, 120);
+  transform: translateY(3px);
+}
+
+.submit-button {
+  margin: 10px auto;
+  padding: 10px;
+  display: block;
+  width: 25%;
+  color: white;
+  font-size: inherit;
+}
