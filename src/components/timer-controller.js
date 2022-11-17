@@ -3,12 +3,14 @@ const TimerController = (props) => {
     <div className="timer-controls row">
       <div
         id="start_stop"
-        className="button col-md-4 button-styles"
+        className="col-md-4 button bg-orange"
         onClick={props.startStopClickHandler}
       >
         Play/Stop
       </div>
-      <div id="reset" className="button col-md-4 button-styles" onClick={props.resetClickHandler}>
+      <div className="col-md-1">
+      </div>
+      <div id="reset" className="col-md-4 button bg-orange" onClick={props.resetClickHandler}>
         Reset
       </div>
     </div>
