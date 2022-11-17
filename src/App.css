@@ -1,63 +1,8 @@
 * {
-  font-family: "Varela Round", sans-serif;
-  user-select: none;
-}
-
-.App {
-  margin: 12% auto;
   text-align: center;
-  color: white;
 }
 
-.container {
-  background-color: #44c9fd;
-  width: 50% !important;
-  padding: 10px 25px 15px;
-  border-radius: 10px;
-}
-
-.title {
-  background-color: red;
-  border-radius: 5px;
-}
-
-.button {
-  background-color: orange;
-  margin: auto;
-  width: 50%;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.heading-styles {
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 50px;
-  padding: 3px;
-  margin-bottom: 10px;
-}
-
-.heading-bg {
-  background-color: #58cc02;
-}
-
-.container-styles {
-  padding: 20px;
-  border: 4px solid darkgray;
-  border-radius: 15px;
-  box-shadow: 0 10px #999;
-}
-
-.button-styles {
-  border: 2px solid #999;
-  border-radius: 50px;
-  box-shadow: 0 7px #999;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-
-.button:active {
-  box-shadow: 0 3px #999;
-  transform: translateY(4px);
+h1 {
+  position: relative;
+  top: 5px;
 }
