@@ -105,7 +105,7 @@ input[type="checkbox"] {
 
 .button:active {
   box-shadow: 0 1px rgb(120, 120, 120);
-  transform: translateY(3px);
+  transform: translateY(6px);
 }
 
 .submit-button {
@@ -116,3 +116,4 @@ input[type="checkbox"] {
   color: white;
   font-size: inherit;
 }
+
